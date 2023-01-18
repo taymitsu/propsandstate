@@ -4,7 +4,8 @@ import Counter from './Counter'
 function App() {
   return (
     <div className="App">
-      <Counter label="Apples" value="3"/>
+      <Counter label="Guava" value="3"/>
+      <Counter label="Lychee" value="7"/>
     </div>
   );
 }
