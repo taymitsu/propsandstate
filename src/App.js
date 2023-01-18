@@ -11,11 +11,19 @@ function App() {
         <Counter 
           label={`Counter: ${i}`}
           value={val}
+          
           increment={ () => {
             const newCount = [...count]
             newCount[i] = val + 1
             setCount(newCount)
           } }
+
+          decrement={() => {
+            const newCount = [...count]
+            newCount[i] = val - 1
+            setCount(newCount)
+          }}
+
         />
       ))}
     </div>

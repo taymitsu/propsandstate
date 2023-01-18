@@ -1,14 +1,12 @@
-import { useState } from 'react'
-
 function Counter(props) {
-  const {label, value, increment} = props
+  const { label, value, increment, decrement } = props
 
   return (
     <div className="Couunter">
       <p>{label}</p>
       <h1>{value}</h1>
       <button onClick={ () => increment() }>+</button>
-      <button onClick={ () => }>-</button>
+      <button onClick={ () => decrement() }>-</button>
 
     </div>
   )
